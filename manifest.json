@@ -1,0 +1,14 @@
+{
+  "name": "Salam Alykum — Learn Turkmen",
+  "short_name": "Salam Alykum",
+  "description": "A free, self-contained Turkmen course — real vocabulary, streaks, and leagues. No ads, no paywall.",
+  "start_url": "./central-asia-bot.html",
+  "display": "standalone",
+  "background_color": "#FBF7EE",
+  "theme_color": "#0B4430",
+  "orientation": "portrait-primary",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
