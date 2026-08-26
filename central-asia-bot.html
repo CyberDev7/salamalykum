@@ -3258,7 +3258,7 @@ async function trySpeakFromServer(word, btnEl){
   if(btnEl){ btnEl.classList.add("speaking"); btnEl.textContent = "🔊 Playing…"; }
   try{
     const res = await withTimeout(
-      fetch(TURKMEN_TTS_SERVER_URL.replace(/\/$/, "") + "/speak", {
+      fetch(TURKMEN_TTS_SERVER_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text: word.t })
