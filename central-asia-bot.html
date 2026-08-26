@@ -3210,7 +3210,7 @@ document.getElementById("dismissStorageBanner").addEventListener("click", ()=> d
    turkmen-tts-server/ folder and its DEPLOY.md) to use genuine Turkmen
    speech synthesis instead of the browser-TTS fallbacks below. Leave it
    as-is and the app just uses the Turkish-voice / phonetic-guide chain. */
-const TURKMEN_TTS_SERVER_URL = "YOUR_TURKMEN_TTS_SERVER_URL"; // e.g. "https://your-space.hf.space"
+   const TURKMEN_TTS_SERVER_URL = "https://salamalykum-nu.vercel.app/api/tts";
 const useTurkmenTtsServer = TURKMEN_TTS_SERVER_URL !== "YOUR_TURKMEN_TTS_SERVER_URL";
 
 const recordedUrlCache = new Map(); // wordId -> download URL, so we don't refetch on every replay
