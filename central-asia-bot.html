@@ -3122,8 +3122,7 @@ function pickVoices(){
     englishVoices[0] ||
     voices[0];
 }
-if(synthSupported){ window.speechSynthesis.onvoiceschanged = pickVoices; pickVoices(); }
-
+if(synthSupported){ window.speechSynthesis.onvoiceschanged = pickVoices; setTimeout(pickVoices, 0); }
 /* ---- Voice Settings screen: let the user preview and pick a voice directly, since we can't hear the audio ourselves to judge quality ---- */
 let manualVoiceURI = null;
 let manualVoiceMode = null; // null = auto, "turkish" = force Turkish voice reading real Turkmen, "phonetic" = force English voice reading the phonetic guide
