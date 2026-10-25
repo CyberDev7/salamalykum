@@ -1,0 +1,15 @@
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+# Open the app at the bare address instead of needing /central-asia-bot.html
+[[redirects]]
+  from = "/"
+  to = "/central-asia-bot.html"
+  status = 200
+
+# Keep the same /api/tts address the app already calls
+[[redirects]]
+  from = "/api/tts"
+  to = "/.netlify/functions/tts"
+  status = 200
